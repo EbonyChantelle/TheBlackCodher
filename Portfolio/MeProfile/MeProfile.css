@@ -1,12 +1,12 @@
 :root {
-  background-color: #f3d0e7;
+  background-color: #ffffff;
 }
 
 .firstText {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #cc3399;
   margin: 0;
   padding-top: 0.25rem;
   padding-left: 0.5rem;
@@ -16,7 +16,64 @@
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #877882;
+  color: #10040c;
   margin: 0;
   padding-left: 0.5rem;
+}
+
+.developerInfo {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-content: center;
+}
+
+.image {
+  width: 560px;
+  height: 360px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.dbTitleText {
+  margin-top: 25px;
+}
+
+.dsTitleText {
+  margin-top: 25px;
+}
+
+h3 {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #cc3399;
+}
+
+.bioText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  color: #10040c;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: #10040c;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+h4 {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+  color: #cc3399;
+  margin-top: 50px;
 }
