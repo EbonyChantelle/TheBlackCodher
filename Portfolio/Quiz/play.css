@@ -8,7 +8,7 @@
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 #3399cc;
+  box-shadow: 0 0.4rem 1.4rem 0 #6633cc;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
@@ -17,7 +17,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   padding: 1.5rem 2.5rem;
-  background-color: #3399cc;
+  background-color: #6633cc;
   color: #ffffff;
 }
 

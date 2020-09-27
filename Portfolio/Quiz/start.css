@@ -4,7 +4,7 @@
 }
 
 * {
-  color: #040c10;
+  color: #080410;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ h2 {
 h1 {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 5.4rem;
-  color: #3399cc;
+  color: #6633cc;
   margin-bottom: 5rem;
 }
 
@@ -78,17 +78,17 @@ h2 {
   padding: 1rem 0;
   width: 20rem;
   text-align: center;
-  border: 0.1rem solid #3399cc;
+  border: 0.1rem solid #6633cc;
   border-radius: 0.625rem;
   margin-bottom: 1rem;
   text-decoration: none;
   color: #ffffff;
-  background-color: #3399cc;
+  background-color: #6633cc;
 }
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 #3399cc;
+  box-shadow: 0 0.4rem 1.4rem 0 #6633cc;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
