@@ -1,136 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link href="favicon.png" rel="icon">
-    <link rel="stylesheet" href="BookshopSite.css">
-    <meta name="theme-color" content="#000">
-    <meta name="description" content="eBook">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="BookshopSite.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-    <body>
-    <main id="root">
-      <section class="container">
-        <header class="header">
-          <h1>Ebony Chantelle's eBooks
-          <nav class="breadcrumb">
-            <a href="/home">Home</a>
-            <a href="/about">About</a>
-            <a class="bookLink" href="/bookcase">Bookcase (0)</a>
-          </nav>
-          </h1>
-        </header>
-        <header class="searchBar">
-          <form>
-            <input type="text" placeholder="Enter..." name="search" value="">
-            <input type="submit" value="Find">
-            <label>Time For Your Next Good Read</label>
-          </form>
-        </header>
-      </section>
-<!-- <section class="list">
-        <div>
-          <h2>Recommended Reads</h2>
-        
-          <div class="book"><img src="COBAB.jpg" alt="Children Of Blood And Bone"></div>
-          <article>
-            <h2 title="Children Of Blood And Bone">Children Of Blood And Bone</h2>
-            <p class="author">By Tomi Adeyemi</p>
-            <p class="price">£3.99</p>
-            <summary class="description">WINNER OF THE TONIGHT SHOW SUMMER READS WITH JIMMY FALLON</summary>
-            <button class="addbtn">Add</button>
-          </article>
+  <body>
+    <nav class="navBar">
+      <div class="name">
+        <a href="/home" class="button">ECCO Books</a>
+      </div>
+      <div class="about">
+        <a href="/about" class="button">About</a>
+      </div>
+      <div class="contact">
+        <a href="/contact" class="button">Contact</a>
+      </div>
+      <div class="bookcase">
+        <a href="/bookcase" class="button">Bookcase 0</a>
+      </div>
+    </nav>
 
-          <div class="book"><img src="COVAV.jpg" alt="Children Of Virtue And Vengeance"></div>
-          <article>
-            <h2 title="Children Of Virtue And Vengeance">Children Of Virtue And Vengeance</h2>
-            <p class="author">By Tomi Adeyemi</p>
-            <p class="price">£0.99</p>
-            <summary class="description">THE SEQUEL TO CHILDREN OF BLOOD AND BONE</summary>
-            <button class="addb
-      tn">Add</button>
-          </article>
+    <h2>Recommended Reads</h2>
 
-          <div class="book"><img src="GTIMN2.jpg" alt="Gather Together In My Name"></div>
-          <article>
-            <h2 title="Gather Together In My Name">Gather Together In My Name</h2>
-            <p class="author">By Maya Angelou</p>
-            <p class="price">£4.99</p>
-            <summary class="description">THE SECOND AUTOBIOGRAPHY</summary>
-            <button class="addbtn">Add</button>
-          </article>
+    <section class="list">
+      <div class="book">
+        <img src="AGCNTS5.jpg" alt="All God's Children Need Travelling Shoes" />
+        <h2 class="title">All God's Children Need Travelling Shoes</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£5.99</p>
+        <summary class="description">THE FIFTH AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="IKWTCBS1.jpg" alt="I Know Why The Caged Bird Sings"></div>
-          <article>
-            <h2 title="I Know Why The Caged Bird Sings">I Know Why The Caged Bird Sings</h2>
-            <p class="author">By Maya Angelou</p>
-            <p class="price">£5.99</p>
-            <summary class="description">THE FIRST AUTOBIOGRAPHY</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="ASFUTH6.jpg" alt="A Song Flung Up To Heaven" />
+        <h2 class="title">A Song Flung Up To Heaven</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£3.99</p>
+        <summary class="description">THE SIXTH AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="MAMAM7.jpg" alt="Mom And Me And Mom"></div>
-          <article>
-            <h2 title="Mom And Me And Mom">Mom And Me And Mom</h2>
-            <p class="author">By Maya Angelou</p>
-            <p class="price">£5.99</p>
-            <summary class="description">THE SEVENTH AUTOBIOGRAPHY</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="COBAB.jpg" alt="Children Of Blood And Bone" />
+        <h2 class="title">Children Of Blood And Bone</h2>
+        <p class="author">Tomi Adeyemi</p>
+        <p class="price">£3.99</p>
+        <summary class="description">
+          WINNER OF THE TONIGHT SHOW SUMMER READS
+        </summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="Q.jpg" alt="Queenie"></div>
-          <article>
-            <h2 title="Queenie">Queenie</h2>
-            <p class="author">By Candice Carty-Williams</p>
-            <p class="price">£4.99</p>
-            <summary class="description">THE SUNDAY TIMES BESTSELLER</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="COVAV.jpg" alt="Children Of Virtue And Vengeance" />
+        <h2 class="title">Children Of Virtue And Vengeance</h2>
+        <p class="author">Tomi Adeyemi</p>
+        <p class="price">£0.99</p>
+        <summary class="description">
+          THE SEQUEL TO CHILDREN OF BLOOD AND BONE
+        </summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="SASAGMLC3.jpg" alt="Singin' And Swingin' And Getting Merry Like Christmas"></div>
-          <article>
-            <h2 title="Singin' And Swingin' And Getting Merry Like Christmas">Singin' And Swingin' And Gettin' Merry Like Christmas</h2>
-            <p class="author">By Maya Angelou</p>
-            <p class="price">£4.99</p>
-            <summary class="description">THE THIRD AUTOBIOGRAPHY</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="GTIMN2.jpg" alt="Gather Together In My Name" />
+        <h2 class="title">Gather Together In My Name</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£4.99</p>
+        <summary class="description">THE SECOND AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="THOAW4.jpg" alt="The Heart Of A Woman"></div>
-          <article>
-            <h2 title="The Heart Of A Woman">The Heart Of A Woman</h2>
-            <p class="author">By Maya Angelou</p>
-            <p class="price">£3.99</p>
-            <summary class="description">THE FOURTH AUTOBIOGRAPHY</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="IKWTCBS1.jpg" alt="I Know Why The Caged Bird Sings" />
+        <h2 class="title">I Know Why The Caged Bird Sings</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£5.99</p>
+        <summary class="description">THE FIRST AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="THUG.jpg" alt="The Hate U Give"></div>
-          <article>
-            <h2 title="The Hate U Give">The Hate U Give</h2>
-            <p class="author">Angie Thomas</p>
-            <p class="price">£7.99</p>
-            <summary class="description">NEW YORK TIMES BESTSELLER</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="MAMAM7.jpg" alt="Mom And Me And Mom" />
+        <h2 class="title">Mom And Me And Mom</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£5.99</p>
+        <summary class="description">THE SEVENTH AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-          <div class="book"><img src="WIANLTTWPAR.jpg" alt="Why I'm No Longer Talking To White People About Race"></div>
-          <article>
-            <h2 title="Why I'm No Longer Talking To White People About Race">Why I'm No Longer Talking To White People About Race</h2>
-            <p class="author">Reni Eddo-Lodge</p>
-            <p class="price">£7.49</p>
-            <summary class="description">THE SUNDAY TIMES BESTSELLER</summary>
-            <button class="addbtn">Add</button>
-          </article>
+      <div class="book">
+        <img src="Q.jpg" alt="Queenie" />
+        <h2 class="title">Queenie</h2>
+        <p class="author">Candice Carty-Williams</p>
+        <p class="price">£4.99</p>
+        <summary class="description">THE SUNDAY TIMES BESTSELLER</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-        </div>
-      </section> -->
+      <div class="book">
+        <img
+          src="SASAGMLC3.jpg"
+          alt="Singin' And Swingin' And Getting Merry Like Christmas"
+        />
+        <h2 class="title">Singin' And Swingin' And Gettin' Merry Like</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£4.99</p>
+        <summary class="description">THE THIRD AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-      
-    </main>
+      <div class="book">
+        <img src="THOAW4.jpg" alt="The Heart Of A Woman" />
+        <h2 class="title">The Heart Of A Woman</h2>
+        <p class="author">Maya Angelou</p>
+        <p class="price">£3.99</p>
+        <summary class="description">THE FOURTH AUTOBIOGRAPHY</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-    <div id="book-display"></div>
+      <div class="book">
+        <img src="THUG.jpg" alt="The Hate U Give" />
+        <h2 class="title">The Hate U Give</h2>
+        <p class="author">Angie Thomas</p>
+        <p class="price">£7.99</p>
+        <summary class="description">NEW YORK TIMES BESTSELLER</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
 
-    <script type="module" src="BookshopSite.js"></script>
-  </body> 
+      <div class="book">
+        <img
+          src="WIANLTTWPAR.jpg"
+          alt="Why I'm No Longer Talking To White People About Race"
+        />
+        <h2 class="title">Why I'm No Longer Talking To White People About</h2>
+        <p class="author">Reni Eddo-Lodge</p>
+        <p class="price">£7.49</p>
+        <summary class="description">THE SUNDAY TIMES BESTSELLER</summary>
+        <button class="addbtn">Add To Bookcase</button>
+      </div>
+    </section>
+  </body>
 </html>
