@@ -92,9 +92,3 @@ h2 {
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
-
-.btn[disabled]:hover {
-  cursor: not-allowed;
-  box-shadow: none;
-  transform: none;
-}
