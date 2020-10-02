@@ -1,0 +1,29 @@
+h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  color: #cc3399;
+  text-align: center;
+}
+
+button {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #cc3399;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+li {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #cc3399;
+  list-style: inside;
+  text-align: center;
+}
+
+.booklist {
+  display: block;
+  text-align: center;
+}
