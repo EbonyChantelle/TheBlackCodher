@@ -2,8 +2,7 @@ import React from "react";
 
 const Book = (props) => {
   let {
-    imageLinks,
-    volumeInfo: { title, authors, description },
+    volumeInfo: { title, authors, description, imageLinks },
     saleInfo,
   } = props.book;
 
@@ -18,11 +17,22 @@ const Book = (props) => {
   };
 
   let url = () => {
-    if (imageLinks) {
-      let url = imageLinks.thumbnail;
-      return url;
-    } else {
-      let url = imageLinks.smallThumbnail;
+    if (imageLinks) { // Test if the imagesLinks object exists
+      if (imageLinks.thumbnail) { // Test if the thumbnail property exists
+        let url = imageLinks.thumbnail;
+        return url;
+      }
+      else if(imageLinks.smallThumbnail) { // Test if the smallThumbnail property exists
+        let url = imageLinks.smallThumbnail;
+        return url;
+      }
+      else { // imageLinks object exists, but neither property does
+        let url = "#"
+        return url;
+      }
+    }
+    else{ // imageLinks object doesn't exist
+      let url = "#";
       return url;
     }
   };
@@ -31,7 +41,7 @@ const Book = (props) => {
     <div>
       <h2>{title}</h2>
       <p>
-        {url()} alt{title}
+        <img src={url()} alt={title} />
       </p>
       <p>{authors}</p>
       <p>{description}</p>
