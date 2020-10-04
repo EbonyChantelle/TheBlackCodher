@@ -6,10 +6,15 @@ const Book = (props) => {
     saleInfo,
   } = props.book;
 
+  const formatter = new Intl.NumberFormat("en-GB", {
+     style: "currency",
+     currency: "GBP",
+  });
+
   let amount = () => {
     if (saleInfo.retailPrice) {
       let amount = saleInfo.retailPrice.amount;
-      return amount;
+      return formatter.format(amount);
     } else {
       let amount = "No Amount Set";
       return amount;
