@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const Book = (props) => {
   let {
+    id,
     volumeInfo: {
       title,
       authors,
@@ -11,10 +12,6 @@ const Book = (props) => {
     },
     saleInfo: { listPrice },
   } = props.book;
-
-  function addBook(title) {
-    console.log(`The Book ${title} Was Clicked`);
-  }
 
   const formatter = new Intl.NumberFormat("en-GB", {
     style: "currency",
@@ -61,7 +58,7 @@ const Book = (props) => {
       <p>by {authors ? authors.join(" , ") : "No Authors"}</p>
       <p>{description}</p>
       <p>{listPrice && formatter.format(listPrice.amount)}</p>
-      <button onClick={() => addBook(title)}>Add</button>
+      <button onClick={() => props.addBook(title, id)}>Add</button>
     </div>
   );
 };
