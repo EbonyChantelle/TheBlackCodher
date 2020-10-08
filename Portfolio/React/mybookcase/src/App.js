@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
+import About from "./pages/About";
 import BookList from "./components/BookList";
 import data from "./models/books.json";
 
@@ -22,6 +23,17 @@ const App = (props) => {
           <React.Fragment>
             <Header />
             <BookList books={books} addBook={addBook} />
+          </React.Fragment>
+        )}
+      />
+      <Route
+        exact
+        path="/about"
+        render={() => (
+          <React.Fragment>
+            {/* <Header /> */}
+            <About />
+            {/* <BookList books={books} addBook={addBook} /> */}
           </React.Fragment>
         )}
       />
