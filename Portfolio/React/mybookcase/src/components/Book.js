@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {Button} from 'react-bootstrap';
+// import {Button} from 'react-bootstrap';
 
 const Book = (props) => {
   let {
@@ -59,7 +59,7 @@ const Book = (props) => {
       <p>by {authors ? authors.join(" , ") : "No Authors"}</p>
       <p>{description}</p>
       <p>{listPrice && formatter.format(listPrice.amount)}</p>
-      <Button onClick={() => props.addBook(title, id)}>Add</Button>
+      <button onClick={() => props.addBook(title, id)}>Add</button>
     </div>
   );
 };

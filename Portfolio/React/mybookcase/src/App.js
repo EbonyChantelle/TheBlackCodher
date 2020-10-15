@@ -5,15 +5,18 @@ import Search from "./components/Search";
 import About from "./pages/About";
 import BookList from "./components/BookList";
 import data from "./models/books.json";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
   const [books, setBooks] = useState(data);
   const [ keyword, setKeyword ] = useState('');
+  const [bookcase, setBookcase] = useState([]);
 
   function addBook(title, id) {
     const newBookList = books.filter((book) => book.id !== id);
+    const chosenBook = books.filter(book => book.id === id);
     setBooks(newBookList);
+    setBookcase([...bookcase, ...chosenBook]);
     console.log(`The Book ${title} Was Clicked`);
   }
 
@@ -54,7 +57,7 @@ const App = (props) => {
         render={() => (
           <React.Fragment>
             <Header />
-            {/* <BookList books={books} addBook={addBook} /> */}
+            <BookList books={bookcase} />
           </React.Fragment>
         )}
       />
