@@ -5,7 +5,6 @@ import Search from "./components/Search";
 import About from "./pages/About";
 import BookList from "./components/BookList";
 import data from "./models/books.json";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
   const [books, setBooks] = useState(data);
@@ -17,7 +16,11 @@ const App = (props) => {
     const chosenBook = books.filter(book => book.id === id);
     setBooks(newBookList);
     setBookcase([...bookcase, ...chosenBook]);
-    console.log(`The Book ${title} Was Clicked`);
+  }
+
+  function removeBook (id) {
+    const newBookcaseList = bookcase.filter(book => book.id !== id);
+    setBookcase(newBookcaseList);
   }
 
   async function findBooks (term) {
@@ -47,7 +50,6 @@ const App = (props) => {
           <React.Fragment>
             {/* <Header /> */}
             <About />
-            {/* <BookList books={books} addBook={addBook} /> */}
           </React.Fragment>
         )}
       />
@@ -57,7 +59,7 @@ const App = (props) => {
         render={() => (
           <React.Fragment>
             <Header />
-            <BookList books={bookcase} />
+            <BookList books={bookcase} removeBook={removeBook} />
           </React.Fragment>
         )}
       />
