@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Search from "./components/Search";
+import Search from "./pages/Search";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import BookList from "./components/BookList";
 import data from "./models/books.json";
@@ -35,6 +36,16 @@ const App = (props) => {
       <Route
         exact
         path="/"
+        render={() => (
+          <React.Fragment>
+            {/* <Header /> */}
+            <Home />
+          </React.Fragment>
+        )}
+      />
+      <Route
+        exact
+        path="/search"
         render={() => (
           <React.Fragment>
             <Header />

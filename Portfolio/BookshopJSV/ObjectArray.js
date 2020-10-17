@@ -65,7 +65,7 @@ export const books = [
   },
   {
     image: "SASAGMLC3.jpg",
-    name: "Singin' And Swingin' And Getting' Merry Like",
+    name: "Singin' And Swingin' And Getting' Merry Like Christmas",
     author: "Maya Angelou",
     price: "£4.99",
     description: "THE THIRD AUTOBIOGRAPHY",
@@ -89,7 +89,7 @@ export const books = [
   },
   {
     image: "WIANLTTWPAR.jpg",
-    name: "Why I'm No Longer Talking To White People",
+    name: "Why I'm No Longer Talking To White People About Race",
     author: "Reni Eddo-Lodge",
     price: "£7.49",
     description: "THE SUNDAY TIMES BESTSELLER",

@@ -1,13 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Home = () => {
   return (
     <React.Fragment>
       <h1>The Black Codher Reads</h1>
-      <Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/search">Search</Link>
+      <Link to="/About">About</Link>
+      <Link to="/Search">Search</Link>
       <Link to="/bookcase" className="bookLink">
         Bookcase
       </Link>
@@ -15,4 +14,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Home;

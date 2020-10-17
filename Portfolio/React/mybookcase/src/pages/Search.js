@@ -5,7 +5,7 @@ function Search (props) {
   function handleSubmit (event) {
     event.preventDefault();
     props.findBooks(props.keyword);
-  }
+    }
 
   return (
     <form className='search-form' onSubmit={handleSubmit}>

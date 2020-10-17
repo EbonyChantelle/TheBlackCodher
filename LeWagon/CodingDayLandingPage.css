@@ -1,0 +1,48 @@
+h1, h2, h4 {
+	color: red;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3, h4, p {
+	text-align: center;
+}
+
+#banner {
+	background-image: url('images/background.jpg');
+	height: 150px;
+	padding: 40px;
+	background-image: fit;
+	background-size: cover;
+	text-align: center;
+}
+
+.button {
+	background-color: red;
+	padding: 8px 12px;
+	border-radius: 4px;
+}
+
+.button:link {
+	color: white;
+}
+
+.button:visited {
+	color: white;
+}
+
+#footer {
+	background-color: red;
+	height: 100px
+	padding: 10px;
+	color: white;
+	text-align: center;
+}
+
+.cards {
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: 1fr 1fr 1fr
+}
