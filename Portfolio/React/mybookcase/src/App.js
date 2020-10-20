@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Search from "./pages/Search";
@@ -11,22 +11,37 @@ const App = (props) => {
   const [books, setBooks] = useState(data);
   const [ keyword, setKeyword ] = useState('');
   const [bookcase, setBookcase] = useState([]);
+  const [count, setCount] = useState(0);
+
+  useEffect (() => {
+    document.title = `You added ${count} books`;
+  });
+
+  // return (
+  //   <div>
+  //     <p>You added {count} books</p>
+  //     <button onClick={() => setCount(count + 1)}></button>
+  //     <button onClick={() => setCount(count - 1)}></button>
+  //   </div>
+  // );
 
   function addBook(title, id) {
     const newBookList = books.filter((book) => book.id !== id);
     const chosenBook = books.filter(book => book.id === id);
     setBooks(newBookList);
     setBookcase([...bookcase, ...chosenBook]);
+    setCount(count + 1);
   }
 
   function removeBook (id) {
     const newBookcaseList = bookcase.filter(book => book.id !== id);
     setBookcase(newBookcaseList);
+    setCount (count - 1);
   }
 
   async function findBooks (term) {
     const results = await fetch (
-      `https://www.googleapis.com/books/v1/volumes?q=${term}&filter=paid-ebooks&print-type=books&projection=lite`
+      `https://www.googleapis.com/books/v1/volumes?q=${term}+inauthor:+subject:&filter=paid-ebooks&print-type=books&projection=lite`
       ).then(res => res.json());
     setBooks(results.items);
   }
@@ -38,7 +53,7 @@ const App = (props) => {
         path="/"
         render={() => (
           <React.Fragment>
-            {/* <Header /> */}
+            <Header />
             <Home />
           </React.Fragment>
         )}
@@ -59,7 +74,7 @@ const App = (props) => {
         path="/about"
         render={() => (
           <React.Fragment>
-            {/* <Header /> */}
+            <Header />
             <About />
           </React.Fragment>
         )}
@@ -70,6 +85,7 @@ const App = (props) => {
         render={() => (
           <React.Fragment>
             <Header />
+            <p>You added {count} books</p>
             <BookList books={bookcase} removeBook={removeBook} />
           </React.Fragment>
         )}

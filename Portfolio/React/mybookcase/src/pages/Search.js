@@ -5,6 +5,7 @@ function Search (props) {
   function handleSubmit (event) {
     event.preventDefault();
     props.findBooks(props.keyword);
+    props.setKeyword('');
     }
 
   return (
