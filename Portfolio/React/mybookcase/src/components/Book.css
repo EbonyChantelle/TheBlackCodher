@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap");
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color: #6633cc;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+}
+
+.bookTitle,
+.bookAuthor,
+.bookPrice {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bookDescription {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #6633cc;
+  text-align: justify;
+}

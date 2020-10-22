@@ -1,26 +1,20 @@
 import React from "react";
+import "./About.css";
 // import { Link } from "react-router-dom";
 
 const About = (props) => {
   return (
-    <div className="header">
-      <h1>About</h1>
-      <div className="breadcrumb">
-        {/* <Link to="/">Home</Link> */}
-      </div>
-      <div className="page">
-        <h2>Welcome To The Bookcase Application</h2>
-        <p>
-          The following application was created by Ebony Chantelle. This
-          bookcase app displays a list of books that a user can save to a local
-          bookcase.
+      <div className="pageAbout">
+        <h2 className="aboutH2">Welcome To TBCR</h2>
+        <p className="aboutP">
+          This bookcase application was created and designed by Ebony Chantelle.</p>
+        <p className="aboutP">There is a display of randomly selected books on the Search page, with a search facility to allow for new displays of books by author, name or theme.
         </p>
-        <p>
-          Click on the "Add" button to add a book to your bookcase. Use the
-          search bar to find the latest books by name, author or description.
+        <p className="aboutP">
+          Any books that are of interest, can then be added to a local bookcase, or removed if required.
         </p>
+        <p className="aboutP">Happy Reading!</p>
       </div>
-    </div>
   );
 };
 

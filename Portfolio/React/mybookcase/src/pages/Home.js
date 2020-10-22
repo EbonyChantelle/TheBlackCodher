@@ -4,13 +4,13 @@ import React from "react";
 const Home = () => {
   return (
     <React.Fragment>
-      <h1>TestingHome</h1>
+      {/* <h1>TestingHome</h1> */}
       {/* <Link to="/About">About</Link>
       <Link to="/Search">Search</Link>
       <Link to="/bookcase" className="bookLink">
         Bookcase
       </Link> */}
-      <p>Testing</p>
+      {/* <p>Testing</p> */}
     </React.Fragment>
   );
 };

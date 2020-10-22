@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import BookList from "./components/BookList";
 import data from "./models/books.json";
+import "./App.css"
 
 const App = (props) => {
   const [books, setBooks] = useState(data);
@@ -14,16 +15,8 @@ const App = (props) => {
   const [count, setCount] = useState(0);
 
   useEffect (() => {
-    document.title = `You added ${count} books`;
+    document.title = `${count} Book(s) Added To Bookcase`;
   });
-
-  // return (
-  //   <div>
-  //     <p>You added {count} books</p>
-  //     <button onClick={() => setCount(count + 1)}></button>
-  //     <button onClick={() => setCount(count - 1)}></button>
-  //   </div>
-  // );
 
   function addBook(title, id) {
     const newBookList = books.filter((book) => book.id !== id);
@@ -63,8 +56,10 @@ const App = (props) => {
         path="/search"
         render={() => (
           <React.Fragment>
+            <div className="headerSearch">
             <Header />
             <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
+            </div>
             <BookList books={books} addBook={addBook} />
           </React.Fragment>
         )}
@@ -85,7 +80,7 @@ const App = (props) => {
         render={() => (
           <React.Fragment>
             <Header />
-            <p>You added {count} books</p>
+            <p className="countText">{count} Book(s) Added To Bookcase</p>
             <BookList books={bookcase} removeBook={removeBook} />
           </React.Fragment>
         )}

@@ -5,12 +5,12 @@ import "./Header.css";
 const Header = () => {
   return (
     <React.Fragment>
-      <div className = "Header">
       <h1>The Black Codher Reads</h1>
-      <Link to="/" className = "headerLinks">Home</Link>
-      <Link to="/about" className = "headerLinks">About</Link>
-      <Link to="/search" className = "headerLinks">Search</Link>
-      <Link to="/bookcase" className="headerLinks">
+      <div className="headerLinks">
+      <Link to="/" className = "headerHome">Home</Link>
+      <Link to="/about" className = "headerAbout">About</Link>
+      <Link to="/search" className = "headerSearch">Search</Link>
+      <Link to="/bookcase" className="headerBookcase">
         Bookcase
       </Link>
       </div>
