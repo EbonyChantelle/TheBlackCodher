@@ -34,7 +34,7 @@ const App = (props) => {
 
   async function findBooks (term) {
     const results = await fetch (
-      `https://www.googleapis.com/books/v1/volumes?q=${term}+inauthor:+subject:&filter=paid-ebooks&print-type=books&projection=lite`
+      `https://www.googleapis.com/books/v1/volumes?q=${term}&maxResults=40`
       ).then(res => res.json());
     setBooks(results.items);
   }
