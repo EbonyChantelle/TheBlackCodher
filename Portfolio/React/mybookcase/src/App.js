@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Search from "./pages/Search";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -48,6 +49,7 @@ const App = (props) => {
           <>
             <Header />
             <Home />
+            <Footer />
           </>
         )}
       />

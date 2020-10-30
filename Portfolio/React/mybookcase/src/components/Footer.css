@@ -1,26 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Quattrocento+Sans:wght@400;700&display=swap");
 
-nav {
-  text-align: center;
-}
-
-li {
-  display: inline-block;
+footer {
   font-family: "Quattrocento Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
-}
-
-.pageNumber {
-  padding: 5px 15px;
-}
-
-.pageNumber:hover {
-  background-color: #6633cc;
-  border-radius: 5px;
-}
-
-.pageNumberLink {
   color: #ffffff;
-  text-decoration: none;
+  bottom: 20px;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
 }
