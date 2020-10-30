@@ -45,44 +45,44 @@ const App = (props) => {
         exact
         path="/"
         render={() => (
-          <React.Fragment>
+          <>
             <Header />
             <Home />
-          </React.Fragment>
+          </>
         )}
       />
       <Route
         exact
         path="/search"
         render={() => (
-          <React.Fragment>
+          <>
             <div className="headerSearch">
             <Header />
             <Search findBooks={findBooks} keyword={keyword} setKeyword={setKeyword}/>
             </div>
             <BookList books={books} addBook={addBook} />
-          </React.Fragment>
+          </>
         )}
       />
       <Route
         exact
         path="/about"
         render={() => (
-          <React.Fragment>
+          <>
             <Header />
             <About />
-          </React.Fragment>
+          </>
         )}
       />
       <Route
         exact
         path="/bookcase"
         render={() => (
-          <React.Fragment>
+          <>
             <Header />
             <p className="countText">{count} Book(s) Added To Bookcase</p>
             <BookList books={bookcase} removeBook={removeBook} />
-          </React.Fragment>
+          </>
         )}
       />
     </Router>

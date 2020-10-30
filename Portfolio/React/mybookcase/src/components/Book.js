@@ -12,7 +12,7 @@ const Book = (props) => {
       imageLinks: { thumbnail, smallThumbnail },
     },
     saleInfo: { listPrice },
-  } = props.book;
+  } = props.books;
 
   const formatter = new Intl.NumberFormat("en-GB", {
     style: "currency",
