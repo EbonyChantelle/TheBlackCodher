@@ -28,6 +28,20 @@ const db = {
   },
 }
 
+app.get('/profiles', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    data: db.profiles
+  })
+})
+
+app.get('/books', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    data: db.books
+  })
+})
+
 app.listen(4000, () => {
   console.log('Server Running')
 })
