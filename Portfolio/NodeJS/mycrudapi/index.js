@@ -5,6 +5,29 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+const profile = {
+  forname: "Ebony",
+  surname: "Gordon",
+  age: 40,
+  location: "Birmingham"
+}
+
+const book = {
+  title: "Queenie",
+  author: "Candice Carty-Williams",
+  description: "A funny, clever, heartbreaking lightning bolt of a novel",
+  price: "£4.99"
+}
+
+const db = {
+  profiles: {
+    001: profile,
+  },
+  books: {
+    01: book
+  },
+}
+
 app.listen(4000, () => {
   console.log('Server Running')
 })
