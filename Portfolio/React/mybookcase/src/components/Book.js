@@ -9,10 +9,13 @@ const Book = (props) => {
       title,
       authors,
       description,
-      imageLinks: { thumbnail, smallThumbnail },
+      imageLinks
+      // imageLinks: { thumbnail, smallThumbnail },
     },
     saleInfo: { listPrice },
   } = props.books;
+
+  const noImage = "NoImage.jpg"
 
   const formatter = new Intl.NumberFormat("en-GB", {
     style: "currency",
@@ -23,7 +26,8 @@ const Book = (props) => {
     <div className="bookContent">
       <h2 className="bookTitle">{title}</h2>
       <p>
-        <img src={thumbnail || smallThumbnail} alt={title} />
+      {imageLinks ? <img src={imageLinks.smallThumbnail || imageLinks.thumbnail} alt={title}/> : <img src={noImage} alt={title} className="bookImage" />}
+        {/* <img src={thumbnail || smallThumbnail} alt={title} /> */}
       </p>
       <p className="bookAuthor">by {authors ? authors.join(" , ") : "No Authors"}</p>
       <p className="bookDescription">{description}</p>

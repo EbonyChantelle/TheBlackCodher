@@ -11,7 +11,7 @@ const Header = () => {
       <Link to="/about" className = "headerAbout">About</Link>
       <Link to="/search" className = "headerSearch">Search</Link>
       <Link to="/bookcase" className="headerBookcase">
-        Bookcase
+        Bookshelf
       </Link>
       </div>
     </React.Fragment>
