@@ -10,7 +10,6 @@ const Book = (props) => {
       authors,
       description,
       imageLinks
-      // imageLinks: { thumbnail, smallThumbnail },
     },
     saleInfo: { listPrice },
   } = props.books;
@@ -27,7 +26,6 @@ const Book = (props) => {
       <h2 className="bookTitle">{title}</h2>
       <p>
       {imageLinks ? <img src={imageLinks.smallThumbnail || imageLinks.thumbnail} alt={title}/> : <img src={noImage} alt={title} className="bookImage" />}
-        {/* <img src={thumbnail || smallThumbnail} alt={title} /> */}
       </p>
       <p className="bookAuthor">by {authors ? authors.join(" , ") : "No Authors"}</p>
       <p className="bookDescription">{description}</p>
